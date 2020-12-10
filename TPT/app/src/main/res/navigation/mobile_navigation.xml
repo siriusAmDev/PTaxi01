@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_order">
+
+    <fragment
+        android:id="@+id/nav_order"
+        android:name="com.sirius.net.ptaxi.ui.home.HomeFragment"
+        android:label="@string/order"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/nav_profile"
+            app:destination="@id/nav_to_profile" />
+        <action
+            android:id="@+id/nav_offres"
+            app:destination="@id/nav_to_offre" />
+        <action
+            android:id="@+id/nav_reservation"
+            app:destination="@id/nav_to_taxi" />
+        <action
+            android:id="@+id/nav_new_offer"
+            app:destination="@id/nav_new_offer" />
+<!--        <action-->
+<!--            android:id="@+id/nav_dcnx"-->
+<!--            app:destination="@id/nav_to_logout" />-->
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_to_profile"
+        android:name="com.sirius.net.ptaxi.ui.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_to_offre"
+        android:name="com.sirius.net.ptaxi.ui.offre.OffreFragment"
+        android:label="@string/offers"
+        tools:layout="@layout/fragment_offer" />
+    <fragment
+        android:id="@+id/nav_to_taxi"
+        android:name="com.sirius.net.ptaxi.ui.taxi.TaxiFragment"
+        android:label="@string/Preservation"
+        tools:layout="@layout/taxi_fragment" />
+    <fragment
+        android:id="@+id/nav_new_offer"
+        android:name="com.sirius.net.ptaxi.ui.offre.NewOffreFragment"
+        android:label="@string/Noffre"
+        tools:layout="@layout/new_offer_fragment" />
+<!--    <activity-->
+<!--        android:id="@+id/nav_to_logout"-->
+<!--        android:name="com.sirius.net.ptaxi.activities.Login.LoginActivity"-->
+<!--        tools:layout="@layout/activity_login" />-->
+
+
+</navigation>

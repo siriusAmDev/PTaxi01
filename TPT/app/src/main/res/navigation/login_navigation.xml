@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_navigation"
+    app:startDestination="@id/nav_login">
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.sirius.net.ptaxi.ui.login.LoginFragment"
+        android:label="login_fragment"
+        tools:layout="@layout/login_fragment" >
+        <action
+            android:id="@+id/action_register"
+            app:destination="@id/nav_register" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_register"
+        android:name="com.sirius.net.ptaxi.ui.register.RegisterFragment"
+        android:label="register_fragment"
+        tools:layout="@layout/register_fragment" >
+        <action
+            android:id="@+id/nav_confirm_register"
+            app:destination="@id/nav_register_vehicle" >
+            <argument
+                android:name="userNAme"
+                app:argType="string"
+                android:defaultValue=""/>
+            <argument
+                android:name="userPhone"
+                app:argType="string"
+                android:defaultValue=""/>
+            <argument
+                android:name="userPass"
+                app:argType="string"
+                android:defaultValue=""/>
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_register_vehicle"
+        android:name="com.sirius.net.ptaxi.ui.register.RegisterVehicleFragment"
+        android:label="register_vehicle_fragment"
+        tools:layout="@layout/register_vehicle_fragment" >
+        <action
+            android:id="@+id/nav_confirm_vehicle_register"
+            app:destination="@id/nav_login" />
+
+    </fragment>
+   <!-- <fragment
+        android:id="@+id/nav_confirm"
+        android:name="com.sirius.net.ptaxi.ui.confirmation.ConfirmFragment"
+        android:label="confirm_fragment"
+        tools:layout="@layout/confirm_fragment" >
+        <action
+            android:id="@+id/nav_delete_acc"
+            app:destination="@id/nav_login" />
+    </fragment>-->
+</navigation>

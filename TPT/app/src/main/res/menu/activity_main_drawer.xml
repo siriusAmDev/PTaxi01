@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/grp1"
+        android:checkableBehavior="single">
+<!--        <item-->
+<!--            android:id="@+id/nav_order"-->
+<!--            android:icon="@drawable/ic_cart"-->
+<!--            android:title="@string/Pconsulter" />-->
+        <item
+            android:id="@+id/nav_offres"
+            android:icon="@drawable/ic_monetisation"
+            android:title="@string/Poffre" />
+
+        <item
+            android:id="@+id/nav_reservation"
+            android:title="@string/Preservation"
+            android:icon="@drawable/ic_taxi"
+            />
+        <item
+            android:id="@+id/nav_profile"
+            android:title="@string/profile"
+            android:icon="@drawable/ic_account"
+            />
+<!--        <item-->
+<!--            android:id="@+id/nav_settings"-->
+<!--            android:title="@string/settings"-->
+<!--            android:icon="@drawable/ic_settings"-->
+<!--            />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_about_us"-->
+<!--            android:title="@string/about_us"-->
+<!--            android:icon="@drawable/ic_about"-->
+<!--            />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_reporter"-->
+<!--            android:title="@string/reporter"-->
+<!--            android:icon="@drawable/ic_archway"-->
+<!--            />-->
+        <item
+            android:id="@+id/nav_dcnx"
+            android:title="@string/dcnx"
+            android:icon="@drawable/ic_cancel"
+            />
+    </group>
+</menu>

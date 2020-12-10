@@ -1,0 +1,46 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TLink" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/orange_400</item>
+        <item name="colorPrimaryVariant">@color/yellow_F00</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/grey_50</item>
+        <item name="colorSecondaryVariant">@color/yellow_C00</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/transparent</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="button_style" >
+        <item name="backgroundTint">@null</item>
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="button_style_outlined" >
+        <item name="backgroundTint">@null</item>
+        <item name="android:background">@drawable/outline_button_background</item>
+        <item name="android:textColor">@color/orange_400</item>
+    </style>
+
+    <style name="AppTheme.Launcher" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:statusBarColor" tools:targetApi="l">@color/transparent</item>
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+    <style name="Theme.TLink.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
+        <item name="android:shadowColor" >@color/white</item>
+    </style>
+
+    <style name="Theme.TLink.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.TLink.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="orange_400">#E77400</color>
+    <color name="yellow_F00">#F7FF00</color>
+    <color name="yellow_C00">#FFDC00</color>
+    <color name="grey_50">#505050</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="grey">#8BD1D1D1</color>
+    <color name="ripple_color">#3CFFFFFF</color>
+</resources>
